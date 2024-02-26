@@ -1,0 +1,33 @@
+<p>Mail Notification</p>
+    <div class="main">
+        <!-- <form (ngSubmit)="sendEmail()">
+            <div>
+                <input type="text" placeholder="Name" name="name" [(ngModel)]="name" class="form-control" required="">
+
+            </div>
+            <div>
+                <input type="email" placeholder="Email" name="email" [(ngModel)]="email" class="form-control" required="">
+
+            </div>
+            <div>
+                <textarea type="text" placeholder="Message" name="message" [(ngModel)]="message" class="form-control" required=""></textarea>
+
+            </div>
+            <div>
+                <button class="form-control btn btn-success">Submit</button>
+            </div>
+        </form> -->
+
+        <div>
+            <label for="to">To:</label>
+            <input type="text" id="to" [(ngModel)]="to">
+            <br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" [(ngModel)]="subject">
+            <br>
+            <label for="body">Body:</label>
+            <textarea id="body" [(ngModel)]="body"></textarea>
+            <br>
+            <button (click)="sendEmail()">Send Email</button>
+          </div>
+    </div>

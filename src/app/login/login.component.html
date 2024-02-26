@@ -1,0 +1,20 @@
+<div class="loginPage">
+    <div class="card">
+        <h4>Login</h4>
+    <div class="loginForm">
+        <form (ngSubmit)="login()">
+
+            <div>
+                <input type="email" placeholder="Email" name="email" [(ngModel)]="email" class="form-control" required="">
+            </div>
+            <div>
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="password" class="form-control" required="">
+            </div>
+            <div>
+                <button class="form-control btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    
+</div>

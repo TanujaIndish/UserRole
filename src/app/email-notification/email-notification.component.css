@@ -1,0 +1,11 @@
+.main{
+    width: 400px;
+}
+.main input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

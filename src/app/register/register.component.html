@@ -1,0 +1,45 @@
+<div id="register-main">
+
+
+<div class="register">
+    <div class="card" id="register-form">
+        <h4>Registration</h4>
+        <form (ngSubmit)="registerForm()">
+            <div>
+                <label for="id">Id</label>
+                <input type="number" name="id" [(ngModel)]="user.id" required="" class="form-control">
+            </div>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" [(ngModel)]="user.firstname" required="" class="form-control">
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" [(ngModel)]="user.lastname" required="" class="form-control">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" [(ngModel)]="user.email" required="" class="form-control">
+        </div>
+        <div>
+            <label for="mobile">Mobile</label>
+            <input type="tel" name="mobile" [(ngModel)]="user.mobile" required="" class="form-control">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" [(ngModel)]="user.password" required="" class="form-control">
+        </div>
+        <div>
+            <button type="submit" class="form-control btn btn-primary" id="register-btn">Register</button>
+        </div>
+    </form>
+
+    <div class="login-page">
+        <h5 id="loginLink">I have an Account <a routerLink="login" routerLinkActive="active">Login Here</a></h5>
+
+    </div>
+    </div>
+
+</div>
+</div>
+<!-- <img src="..src/assets/" alt=""> -->
